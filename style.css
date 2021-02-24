@@ -1,0 +1,122 @@
+table, th, td {
+    border: 1px solid #c0ccd4;
+    
+  }
+
+  table {
+    width: 100%;
+  }
+  td{
+      padding: 2%;
+  }
+  h1 {
+    Font-Family: 'Inconsolata';
+    Font-Size: 44px;
+    color: #ffce00;
+    text-align: center;
+   
+    
+   }
+  
+.ind{text-indent: 50px;}
+
+body{Font-Family: 'Inconsolata';
+  text-decoration: none;
+    padding-left: 10%;
+    padding-right:10% ;
+    padding-bottom: 5%;
+    padding-top: 1%;
+    background-color: #484d5c;
+    color: #c0ccd4;
+    
+}
+
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor:help;
+}
+
+
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: rgb(107, 82, 27);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+.button {
+  background-color: #ffce00;
+  border: none;
+  color: #484d5c;
+  padding: 1%;
+  text-align: center;
+  text-decoration: bold;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #484d5c; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #484d5c; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ffce00; 
+}

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>KMP</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Cinzel:700|Fauna+One" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+    </head>
+    <body >
+        
+        <h1>Identificarea motivelor literare în poezii</h1>
+        <h4 class="ind">   Motivul literar este un element component (idee, simbol sau imagine) al unei opere literare care este accentuat prin repetiție (laitmotivul) sau subliniat în cadrul acțiunii și contribuie la definirea și extinderea mesajului unei opere.<br>
+           <br > Motivul și tema coincid adesea în operele literare de proporții mici (poezie, schiță, povestire).</h4>
+         
+         <h4>Exemple:
+             <ul>
+                 <li>
+                    creația 
+                 </li>
+                 <li>
+                    ploaia  
+                 </li>
+                 <li>
+                    visul  
+                 </li>
+                 <li>
+                    codrul  
+                 </li>
+                 <li>
+                    lacul  
+                 </li>
+                 <li>
+                     luna
+                 </li>
+             </ul>
+         </h4>
+        <table>
+            <tr>
+              <th>Magda Isanos - Lacul</th>
+              <th>Mihai Eminascu - Lacul</th>
+              <th>George Topârceanu - Plouă</th>
+              <th>George Bacovia - Plouă</th>
+            </tr>
+            <tr>
+              <td>In inima padurilor batrane,<br>
+                spun basmele c-ar fi un mandru lac,<br>
+                de nuferi plin si locuit de zane ,<br>
+                cu ape care-ntotdeauna tac.<br>
+                <br>
+                Pe tarmuri ,iarba-i scurta , matasoasa ;<br>
+                poteci,nici urme intr-acolo nu-s ;<br>
+                se strange-n jur padurea tot mai deasa<br>
+                si bland lumina picura de sus<br>
+                <br>
+                Cand cade noaptea, codrul se-nfioara ,<br>
+                dar lacul e la fel de nemiscat ,<br>
+                cu apa mai adanca si mai clara:<br>
+                un harb de cer pe pajiste uitat .<br>
+                <br>
+                Si una cate una , mari si mici ,<br>
+                se-aprind pe cer si-n lacul straveziu<br>
+                ciudate lampioane de pitici,<br>
+                cu focul rece , albastrui si viu<br>
+                </td>
+              <td>Lacul codrilor albastru<br>
+                Nuferi galbeni îl încarcă;<br>
+                Tresărind în cercuri albe<br>
+                El cutremură o barcă.<br>
+                <br>
+                Şi eu trec de-a lung de maluri,<br>
+                Parc-ascult şi parc-aştept<br>
+                Ea din trestii să răsară<br>
+                Şi să-mi cadă lin pe piept;<br>
+                <br>
+                Să sărim în luntrea mică,<br>
+                Îngânaţi de glas de ape,<br>
+                Şi să scap din mână cârma,<br>
+                Şi lopeţile să-mi scape;<br>
+                <br>
+                Să plutim cuprinşi de farmec<br>
+                Sub lumina blândei lune -<br>
+                Vântu-n trestii lin foşnească,<br>
+                Unduioasa apă sune!<br>
+                <br>
+                Dar nu vine... Singuratic<br>
+                În zadar suspin şi sufăr<br>
+                Lângă lacul cel albastru<br>
+                Încărcat cu flori de nufăr.<br>
+                </td>
+
+                <td>Pe-aici când plouă, plouă îndesat,<br>
+                    Nu ţine ca la noi un ceas ori două.<br>
+                    Că ziua plouă, plouă pe-nserat,<br>
+                    Şi când se crapă iar de ziuă, - plouă.<br>
+                    <br>
+                    În faptul zilei, streşinile plâng.<br>
+                    Pădurea stă plouată ca o curcă.<br>
+                    Natura calcă cu piciorul stâng:<br>
+                    Pe-aici când plouă, - plouă, nu se-ncurcă!<br>
+                    <br>
+                    Iar când s-arată soarele sărac.<br>
+                    De după nouri, ca să-ţi facă-n ciudă,<br>
+                    N-apuci a scoate nasul din cerdac,<br>
+                    Că până la întoarcere, - te udă.<br>
+                    <br>
+                    Există şi răstimpuri când se moaie,<br>
+                    Când parcă nu mai toarnă-aşa, de sus,<br>
+                    Şi cerul câte-oleacă, spre apus,<br>
+                    Se luminează puţintel - a ploaie.<br>
+                    <br>
+                    Atunci se cheamă că e timp frumos<br>
+                    (Măcar că tot mai cade-un pic de bură),<br>
+                    Dar fumul din ogeac se lasă-n jos,<br>
+                    Şi porcul umblă tot cu paiu-n gură...<br>
+                    
+                </td>
+
+                <td>Da, plouă cum n-am mai văzut…<br>
+                    Și grele talăngi adormite,<br>
+                    Cum sună sub șuri învechite!<br>
+                    Cum sună în sufletu-mi mut!<br>
+                    <br>
+                    Oh, plânsul și când plouă!<br>
+                    <br>
+                    Și ce enervare pe gând!<br>
+                    Ce zi primitivă de tină!<br>
+                    O bolnavă fată vecină<br>
+                    Răcnește la ploaie, râzând..<br>
+                    <br>
+                    Oh, plânsul și când plouă!<br>
+                    <br>
+                    Da, plouă…și sună umil<br>
+                    Că tot ce-i iubire și ură –<br>
+                    Cu-o muzică tristă, de gură,<br>
+                    Pe-aproape s-aude-un copil.<br>
+                    <br>
+                    Oh, plânsul și când plouă!<br>
+                    <br>
+                    Ce basme și le spun!<br>
+                    Ce lume-așa goală de vise!<br>
+                    … Și cum să nu plângi în abise,<br>
+                    Da, cum să nu mori și nebun?<br>
+                    <br>
+                    Oh, plânsul și când plouă!<br>
+                    </td>
+            </tr>
+           <tr>
+               <td><!--formular pentru poezia 1-->
+                <form name="motiv1">
+                    Motiv: <input id = "nume1" size = "20" tabindex="2" name="field" maxlength="20">
+                    <p>
+                    <input type = "button"class="button"  value = "Determină prezența motivului" onclick="DetMotiv1(); ">
+                    <p>Rezultat: <input id = "rezultat1" size = "20">
+                    <br>
+                    
+                    </form>
+                    <script type="text/javascript">
+                    function kmpSearch(pattern, text) {
+    if (pattern.length == 0)
+            return 0;  // daca pattern-ul este null atunci se va returna 0, adica se va afisa ca motivul nu exista
+
+ //Calculam longest suffix-prefix (LSP)
+    var lsp = [0];  // cazul de baza
+    for (var i = 1; i < pattern.length; i++) {
+        var j = lsp[i - 1];  // presupunem ca extindem LSP-ul anterior
+        while (j > 0 && pattern.charAt(i) != pattern.charAt(j))
+            j = lsp[j - 1];
+        if (pattern.charAt(i) == pattern.charAt(j))
+        j++;
+        lsp.push(j);
+    }
+
+// parcurgem textul
+var j = 0;  // numarul de caractere care se potivesc in pattern
+for (var i = 0; i < text.length; i++) {
+while (j > 0 && text.charAt(i) != pattern.charAt(j))
+j = lsp[j - 1];  // revenim la pattern
+if (text.charAt(i) == pattern.charAt(j)) {
+j++;  //Următorul caracter corespunde, poziția e incrementata
+if (j == pattern.length)
+    return i - (j - 1);
+}
+}
+return -1;  // nu s-a gasit patternul in text
+}
+                        function DetMotiv1(){
+                            var nume1=document.getElementById("nume1").value;
+                            var rez1;
+                            if(kmpSearch(nume1,"In inima padurilor batrane, spun basmele c-ar fi un mandru lac, de nuferi plin si locuit de zane , cu ape care-ntotdeauna tac. Pe tarmuri ,iarba-i scurta , matasoasa ; poteci,nici urme intr-acolo nu-s ; se strange-n jur padurea tot mai deasa si bland lumina picura de sus Cand cade noaptea , codrul se-nfioara , dar lacul e la fel de nemiscat , cu apa mai adanca si mai clara: un harb de cer pe pajiste uitat . Si una cate una , mari si mici , se-aprind pe cer si-n lacul straveziu ciudate lampioane de pitici, cu focul rece , albastrui si viu")>0)
+                                rez1="Este prezent";
+                            else rez1="Nu este prezent";
+                     
+                     document.getElementById("rezultat1").value = rez1;
+                    
+                     }
+                    
+                     </script>   
+               </td><!--formular pentru poezia 2-->
+               <td><form name="motiv2">
+                Motiv: <input id = "nume2" size = "20" tabindex="2" name="field" maxlength="20">
+                <p>
+                <input type = "button"class="button" value = "Determină prezența motivului" onclick="DetMotiv2(); ">
+                <p>Rezultat: <input id = "rezultat2" size = "20">
+                <br>
+                
+                </form>
+                <script type="text/javascript">
+                function kmpSearch(pattern, text) {
+    if (pattern.length == 0)
+            return 0;  // daca pattern-ul este null atunci se va returna 0, adica se va afisa ca motivul nu exista
+
+ //Calculam longest suffix-prefix (LSP)
+    var lsp = [0];  // cazul de baza
+    for (var i = 1; i < pattern.length; i++) {
+        var j = lsp[i - 1];  // presupunem ca extindem LSP-ul anterior
+        while (j > 0 && pattern.charAt(i) != pattern.charAt(j))
+            j = lsp[j - 1];
+        if (pattern.charAt(i) == pattern.charAt(j))
+        j++;
+        lsp.push(j);
+    }
+
+// parcurgem textul
+var j = 0;  // numarul de caractere care se potivesc in pattern
+for (var i = 0; i < text.length; i++) {
+while (j > 0 && text.charAt(i) != pattern.charAt(j))
+j = lsp[j - 1];  // revenim la pattern
+if (text.charAt(i) == pattern.charAt(j)) {
+j++;  //Următorul caracter corespunde, poziția e incrementata
+if (j == pattern.length)
+    return i - (j - 1);
+}
+}
+return -1;  // nu s-a gasit patternul in text
+}
+                    function DetMotiv2(){
+                        var nume2=document.getElementById("nume2").value;
+                        var rez2;
+                        if(kmpSearch(nume2,"Lacul codrilor albastru Nuferi galbeni îl încarcă; Tresărind în cercuri albe El cutremură o barcă. Şi eu trec de-a lung de maluri, Parc-ascult şi parc-aştept Ea din trestii să răsară Şi să-mi cadă lin pe piept; Să sărim în luntrea mică, Îngânaţi de glas de ape, Şi să scap din mână cârma, Şi lopeţile să-mi scape; Să plutim cuprinşi de farmec Sub lumina blândei lune - Vântu-n trestii lin foşnească, Unduioasa apă sune! Dar nu vine... Singuratic În zadar suspin şi sufăr Lângă lacul cel albastru Încărcat cu flori de nufăr.")>0)
+                            rez2="Este prezent";
+                        else rez2="Nu este prezent";
+                 
+                 document.getElementById("rezultat2").value = rez2;
+                
+                 }
+                
+                 </script>   </td>
+               <td><!--formular pentru poezia 3-->
+                   <form name="motiv3">
+                Motiv: <input id = "nume3" size = "20" tabindex="2" name="field" maxlength="20">
+                <p>
+                <input type = "button"class="button" value = "Determină prezența motivului" onclick="DetMotiv3(); ">
+                <p>Rezultat: <input id = "rezultat3" size = "20">
+                <br>
+                
+                </form>
+                <script type="text/javascript">
+                function kmpSearch(pattern, text) {
+    if (pattern.length == 0)
+            return 0;  // daca pattern-ul este null atunci se va returna 0, adica se va afisa ca motivul nu exista
+
+ //Calculam longest suffix-prefix (LSP)
+    var lsp = [0];  // cazul de baza
+    for (var i = 1; i < pattern.length; i++) {
+        var j = lsp[i - 1];  // presupunem ca extindem LSP-ul anterior
+        while (j > 0 && pattern.charAt(i) != pattern.charAt(j))
+            j = lsp[j - 1];
+        if (pattern.charAt(i) == pattern.charAt(j))
+        j++;
+        lsp.push(j);
+    }
+
+// parcurgem textul
+var j = 0;  // numarul de caractere care se potivesc in pattern
+for (var i = 0; i < text.length; i++) {
+while (j > 0 && text.charAt(i) != pattern.charAt(j))
+j = lsp[j - 1];  // revenim la pattern
+if (text.charAt(i) == pattern.charAt(j)) {
+j++;  //Următorul caracter corespunde, poziția e incrementata
+if (j == pattern.length)
+    return i - (j - 1);
+}
+}
+return -1;  // nu s-a gasit patternul in text
+}
+                    function DetMotiv3(){
+                        var nume3=document.getElementById("nume3").value;
+                        var rez3;
+                        if(kmpSearch(nume3,"Pe-aici când plouă, plouă îndesat, Nu ţine ca la noi un ceas ori două. Că ziua plouă, plouă pe-nserat, Şi când se crapă iar de ziuă, - plouă. În faptul zilei, streşinile plâng. Pădurea stă plouată ca o curcă. Natura calcă cu piciorul stâng: Pe-aici când plouă, - plouă, nu se-ncurcă! Iar când s-arată soarele sărac. De după nouri, ca să-ţi facă-n ciudă, N-apuci a scoate nasul din cerdac, Că până la întoarcere, - te udă. Există şi răstimpuri când se moaie, Când parcă nu mai toarnă-aşa, de sus, Şi cerul câte-oleacă, spre apus, Se luminează puţintel - a ploaie. Atunci se cheamă că e timp frumos (Măcar că tot mai cade-un pic de bură), Dar fumul din ogeac se lasă-n jos, Şi porcul umblă tot cu paiu-n gură...")>0)
+                            rez3="Este prezent";
+                        else rez3="Nu este prezent";
+                 
+                 document.getElementById("rezultat3").value = rez3;
+                
+                 }
+                
+                 </script>   </td>
+                <td><!--formular pentru poezia 4-->
+                    <form name="motiv4">
+                 Motiv: <input id = "nume4" size = "20" tabindex="2" name="field" maxlength="20">
+                 <p>
+                 <input type = "button"class="button" value = "Determină prezența motivului" onclick="DetMotiv4(); ">
+                 <p>Rezultat: <input id = "rezultat4" size = "20">
+                 <br>
+                 
+                 </form>
+                 <script type="text/javascript">
+                 function kmpSearch(pattern, text) {
+    if (pattern.length == 0)
+            return 0;  // daca pattern-ul este null atunci se va returna 0, adica se va afisa ca motivul nu exista
+
+ //Calculam longest suffix-prefix (LSP)
+    var lsp = [0];  // cazul de baza
+    for (var i = 1; i < pattern.length; i++) {
+        var j = lsp[i - 1];  // presupunem ca extindem LSP-ul anterior
+        while (j > 0 && pattern.charAt(i) != pattern.charAt(j))
+            j = lsp[j - 1];
+        if (pattern.charAt(i) == pattern.charAt(j))
+        j++;
+        lsp.push(j);
+    }
+
+// parcurgem textul
+var j = 0;  // numarul de caractere care se potivesc in pattern
+for (var i = 0; i < text.length; i++) {
+while (j > 0 && text.charAt(i) != pattern.charAt(j))
+j = lsp[j - 1];  // revenim la pattern
+if (text.charAt(i) == pattern.charAt(j)) {
+j++;  //Următorul caracter corespunde, poziția e incrementata
+if (j == pattern.length)
+    return i - (j - 1);
+}
+}
+return -1;  // nu s-a gasit patternul in text
+}
+                     function DetMotiv4(){
+                         var nume4=document.getElementById("nume4").value;
+                         var rez4;
+                         if(kmpSearch(nume4,"Da, plouă cum n-am mai văzut… Și grele talăngi adormite, Cum sună sub șuri învechite! Cum sună în sufletu-mi mut! Oh, plânsul și când plouă! Și ce enervare pe gând! Ce zi primitivă de tină! O bolnavă fată vecină Răcnește la ploaie, râzând.. Oh, plânsul și când plouă! Da, plouă…și sună umil Că tot ce-i iubire și ură – Cu-o muzică tristă, de gură, Pe-aproape s-aude-un copil. Oh, plânsul și când plouă! Ce basme și le spun! Ce lume-așa goală de vise! … Și cum să nu plângi în abise, Da, cum să nu mori și nebun? Oh, plânsul și când plouă!")>0)
+                             rez4="Este prezent";
+                         else rez4="Nu este prezent";
+                  
+                  document.getElementById("rezultat4").value = rez4;
+                 
+                  }
+                 
+                  </script>   </td>
+           </tr>
+          </table>
+         
+         
+
+<p></p>
+        <h4>
+        <div class="popup" onclick="myFunction()">Cum functioneaza?
+        <span class="popuptext" id="myPopup">Introdu numele unui motiv literar cunoscut. <br>
+        Pe baza algoritmului implementat se va determina prezenta sau absenta motivului literar in poezie.</span>
+        </div>
+
+        <script>
+        // la click va aparea fereastra popup
+        function myFunction() {
+        var popup = document.getElementById("myPopup");
+        popup.classList.toggle("show");
+        }
+        </script>
+         </h4>
+        <p style="text-align: right; font-size: 13px;">*Pentru identificarea prezentei motivelor literare s-a utilizat algoritmul Knuth–Morris–Pratt de indentificare existentei unui pattern intr-un text.</p>
+    
+    </body>
+</html>
